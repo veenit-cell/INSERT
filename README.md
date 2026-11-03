@@ -1,9 +1,15 @@
-# Veenit Ramteke — Resume & Portfolio
+# Veenit Ramteke — Engineering & AI
 
-Responsive personal resume and portfolio website. The design pairs expressive serif headings with readable sans-serif body text, a deep blue palette, responsive section navigation, and project cards.
+A fresh, responsive resume and project portfolio built with semantic HTML and a standalone CSS stylesheet.
 
-- `index.html`: navigation, about, work, achievements, services, and contact sections
-- `style.css`: typography, color tokens, responsive layout, positioning, and component styling
-- `assets/images/`: profile and project imagery
+## Run locally
+Open `index.html` in a browser. Google Fonts need an internet connection; system fallbacks are included.
 
-Open `index.html` locally to preview.
+## Sections
+- Introduction and current interests
+- About and focus areas
+- Selected projects: DRISHTI, CarbonLoop, and VASH
+- Hackathon highlights
+- Contact links
+
+The visuals are created with CSS shapes and typography; the site has no image or JavaScript dependencies. Layouts adapt for mobile, keyboard focus is visible, and reduced-motion preferences are respected.
