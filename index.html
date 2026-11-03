@@ -1,469 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veenit Ramteke — Portfolio 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4ec">
+  <meta name="description" content="Veenit Ramteke is an engineering student exploring AI, machine learning, and thoughtful software." />
+  <title>Veenit Ramteke — Engineering & AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Veenit Ramteke, home">
+      <span class="wordmark-icon" aria-hidden="true">V</span>
+      <span class="wordmark-name">Veenit Ramteke<small>Engineering · AI</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#highlights">Highlights</a>
+    </nav>
+    <a class="header-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+    <details class="mobile-nav">
+      <summary aria-label="Open navigation menu"><span></span><span></span></summary>
+      <nav aria-label="Mobile navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#highlights">Highlights</a><a href="#contact">Contact</a>
+      </nav>
+    </details>
+  </header>
 
-<!-- ── NAV ── -->
-<nav aria-label="Primary">
-  <a class="nav-logo" href="#hero">Veenit Ramteke</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#services">What I Do</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button type="button" class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-controls="drawer" aria-expanded="false" aria-haspopup="dialog">
-    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-  </button>
-</nav>
-
-<dialog class="mobile-drawer" id="drawer" aria-label="Navigation menu">
-  <button type="button" class="drawer-close" id="drawerClose" aria-label="Close navigation menu" autofocus><span aria-hidden="true">✕</span></button>
-  <a href="#about" class="drawer-link">About</a>
-  <a href="#work" class="drawer-link">Work</a>
-  <a href="#achievements" class="drawer-link">Achievements</a>
-  <a href="#services" class="drawer-link">What I Do</a>
-  <a href="#contact" class="drawer-link">Contact</a>
-</dialog>
-
-<main id="main-content" tabindex="-1">
-<!-- ── HERO ── -->
-<section id="hero">
-
-  <!-- Parallax photo columns -->
-  <div class="hero-col col-far-left"  data-speed="0.28">
-    <div class="hero-frame"><img src="assets/images/drishti-operational-loop.svg" alt=""></div>
-    <div class="hero-frame"><img src="assets/images/carbonloop-app-icon.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-mid-left"  data-speed="0.52">
-    <div class="hero-frame"><img src="assets/images/vash-tier1-dashboard.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-mid-right" data-speed="0.44">
-    <div class="hero-frame"><img src="assets/images/drishti-operational-loop.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-far-right" data-speed="0.22">
-    <div class="hero-frame"><img src="assets/images/carbonloop-app-icon.svg" alt=""></div>
-    <div class="hero-frame"><img src="assets/images/vash-tier1-dashboard.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-bot-left"  data-speed="0.82">
-    <div class="hero-frame"><img src="assets/images/drishti-operational-loop.svg" alt=""></div>
-  </div>
-  <div class="hero-col col-bot-right" data-speed="0.72">
-    <div class="hero-frame"><img src="assets/images/carbonloop-app-icon.svg" alt=""></div>
-  </div>
-
-  <!-- Hero text -->
-  <div class="hero-content">
-    <p class="hero-label-top">Portfolio — 2026</p>
-    <p class="hero-hi">Hi, I'm</p>
-    <h1 class="hero-name">Veenit</h1>
-    <p class="hero-roles">AI Engineer · Student · 22</p>
-    <div class="hero-ctas">
-      <a href="#work" class="btn-primary">View Work</a>
-      <a href="#contact" class="btn-ghost">Let's Talk →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ── WORK ── -->
-<section id="work" aria-labelledby="work-heading">
-  <p class="section-label">— Work</p>
-  <h2 class="work-heading" id="work-heading">The <em>work</em></h2>
-  <div class="project-grid">
-    <article class="work-item reveal" aria-labelledby="drishti-title">
-      <img src="assets/images/drishti-operational-loop.svg" alt="DRISHTI operational loop diagram showing evidence review, decision support, human approval, and field updates">
-      <div class="work-details">
-        <p class="work-cat">Disaster response · Tabletop demo</p>
-        <h3 class="work-title" id="drishti-title">DRISHTI</h3>
-        <p class="work-description">A disaster-response workspace that brings field reports, coverage gaps, routes, and resources into one review process. Missions require human approval, with decision history and offline command reconciliation supporting the workflow.</p>
-        <p class="work-stack"><strong>Stack:</strong> React, TypeScript, FastAPI, PostgreSQL / PostGIS.</p>
-        <p class="work-status">Supervised tabletop demo; not a live emergency deployment.</p>
-        <a class="project-link" href="https://github.com/veenit-cell/DRISHTI">View DRISHTI on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="work-item reveal" aria-labelledby="carbonloop-title">
-      <img src="assets/images/carbonloop-app-icon.svg" alt="CarbonLoop app icon from the project repository">
-      <div class="work-details">
-        <p class="work-cat">Sustainability · Hackathon MVP</p>
-        <h3 class="work-title" id="carbonloop-title">CarbonLoop</h3>
-        <p class="work-description">A sustainability game that turns everyday activities into missions, progression, and rewards. A deterministic carbon engine keeps estimated avoided emissions separate from game points, while browser storage preserves demo progress.</p>
-        <p class="work-stack"><strong>Web stack:</strong> Next.js, React, TypeScript, Tailwind CSS.</p>
-        <p class="work-status">Hackathon demo using synthetic activities, simulated evidence, and mock rewards.</p>
-        <a class="project-link" href="https://github.com/veenit-cell/CARBON-LOOP-FINAL">View CarbonLoop on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="work-item reveal" aria-labelledby="vash-title">
-      <img src="assets/images/vash-tier1-dashboard.svg" alt="VASH Tier-1 audit and risk dashboard screenshot">
-      <div class="work-details">
-        <p class="work-cat">Transaction monitoring · Hackathon project</p>
-        <h3 class="work-title" id="vash-title">VASH</h3>
-        <p class="work-description">A transaction-monitoring project combining anomaly scoring, graph analysis, and a security operations dashboard to investigate suspicious payment patterns.</p>
-        <p class="work-stack"><strong>Stack:</strong> React, TypeScript, FastAPI, Python.</p>
-        <p class="work-stack"><strong>My contribution:</strong> Database and data structuring.</p>
-        <p class="work-status">Team project for Hack2Ignite 2026.</p>
-        <a class="project-link" href="https://github.com/S-Abhiram05/Hack2ignite-VASH">View VASH on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ── ACHIEVEMENTS ── -->
-<section id="achievements" aria-labelledby="achievements-heading">
-  <p class="section-label">— Achievements</p>
-  <h2 class="work-heading" id="achievements-heading">Beyond the <em>build</em></h2>
-  <div class="achievements-grid">
-    <article class="achievement-card reveal" aria-labelledby="electronova-title">
-      <img src="assets/images/electronova-robotics-winner.svg" alt="ELECTRONOVA winner holding a certificate and trophy beside a ₹15,000 team prize cheque" width="1200" height="1600" loading="lazy">
-      <div class="achievement-details">
-        <p class="achievement-label">1st place · Robotics</p>
-        <h3 id="electronova-title">ELECTRONOVA Hackathon</h3>
-        <p>Acropolis Institute of Technology and Research, Indore · 2026</p>
-        <p>First place in robotics at the 24-hour national-level hackathon. Team Hiveminds received a ₹15,000 prize.</p>
-        <a href="assets/images/electronova-robotics-winner.svg">View ELECTRONOVA award photo</a>
-        <a href="https://github.com/veenit-cell/Electonova-Hackathon_Winning_Robot-" target="_blank" rel="noopener">View ELECTRONOVA project on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-    <article class="achievement-card reveal" aria-labelledby="avinya-title">
-      <img src="assets/images/avinya-iit-guwahati.svg" alt="AVINYA 2026 participants holding certificates beside the IIT Guwahati podium" width="1280" height="960" loading="lazy">
-      <div class="achievement-details">
-        <p class="achievement-label">Top 15 finalist</p>
-        <h3 id="avinya-title">AVINYA 2026</h3>
-        <p>Indian Institute of Technology Guwahati</p>
-        <p>Selected among the top 15 finalists at the AVINYA 2026 hackathon at IIT Guwahati.</p>
-        <a href="assets/images/avinya-iit-guwahati.svg">View AVINYA event photo</a>
-      </div>
-    </article>
-  </div>
-</section>
-<!-- ── ABOUT ── -->
-<section id="about">
-  <p class="section-label reveal">— About</p>
-
-  <div class="about-row1">
-    <div class="reveal">
-      <h2 class="about-headline" id="aboutHeadline">
-        <em>"I've always chased</em><br>the next thing."
-      </h2>
-      <p class="about-bio">
-        3rd Year Engineering Student | Aspiring AI Engineer 🤖 | Exploring AI, Machine Learning, Hackathons &amp; Innovation | Learning and building projects to solve real-world problems 🚀
-      </p>
-    </div>
-    <div class="about-portrait-frame reveal">
-      <img src="assets/images/veenit-profile.svg" alt="Veenit Ramteke wearing a life jacket on a boat" width="1200" height="1600" loading="lazy">
-    </div>
-  </div>
-
-  <div class="about-row2 reveal">
-    <p class="interests-label">Interests</p>
-    <div class="interests-grid">
-      <div class="interest-card">
-        <span class="interest-icon">🤖</span>
-        <span class="interest-label">Artificial Intelligence</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">💻</span>
-        <span class="interest-label">Machine Learning</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">🚀</span>
-        <span class="interest-label">Hackathons</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">🧠</span>
-        <span class="interest-label">Problem Solving</span>
-      </div>
-      <div class="interest-card">
-        <span class="interest-icon">⚡</span>
-        <span class="interest-label">Real-World Projects</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── QUOTE BANNER ── -->
-<section id="quote">
-  <blockquote class="quote-text reveal">
-    "Teaching machines to think while never stopping my own learning." 🤖<br>
-    "Turning ideas into intelligence, one model at a time."
-  </blockquote>
-  <p class="quote-attr reveal">— <em>Veenit Ramteke</em></p>
-</section>
-
-
-
-<!-- ── WHAT I DO ── -->
-<section id="services">
-  <p class="services-label reveal">— What I Do</p>
-  <h2 class="services-heading reveal">Building things that <em>matter</em></h2>
-
-  <div class="services-grid">
-    <div class="service-card reveal">
-      <p class="service-num">01</p>
-      <h3 class="service-title">AI &amp; <em>Machine Learning</em></h3>
-      <p class="service-body">DRISHTI brings reports, coverage gaps, and mission approvals into a supervised disaster-response workspace. VASH explores anomaly scoring and graph analysis for suspicious transaction patterns.</p>
-    </div>
-    <div class="service-card reveal">
-      <p class="service-num">02</p>
-      <h3 class="service-title">Full-Stack <em>Engineering</em></h3>
-      <p class="service-body">The featured projects span React interfaces, Python APIs, and shared TypeScript domain logic: DRISHTI for disaster response, CarbonLoop for sustainability missions, and VASH for transaction monitoring.</p>
-    </div>
-    <div class="service-card reveal">
-      <p class="service-num">03</p>
-      <h3 class="service-title">Data &amp; <em>Analytics</em></h3>
-      <p class="service-body">CarbonLoop separates deterministic carbon estimates from game progression. My documented contribution to VASH focuses on database and data structuring.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ── -->
-<section id="contact">
-  <p class="section-label reveal">— Contact</p>
-  <div class="contact-grid">
-    <div>
-      <h2 class="contact-heading" id="contactHeadline">
-        Let's build<br>something <em>great.</em>
-      </h2>
-      <div class="social-links">
-        <a href="mailto:veenitramteke@gmail.com" class="social-link reveal">
-          <span class="social-link-type">Email</span>
-          <span class="social-link-value">veenitramteke@gmail.com</span>
-        </a>
-        <a href="https://instagram.com/veenitr" class="social-link reveal" target="_blank" rel="noopener">
-          <span class="social-link-type">Instagram</span>
-          <span class="social-link-value">@veenitr</span>
-        </a>
-        <a href="https://www.linkedin.com/in/veenit-ramteke/" class="social-link reveal" target="_blank" rel="noopener">
-          <span class="social-link-type">LinkedIn</span>
-          <span class="social-link-value">linkedin.com/in/veenit-ramteke</span>
-        </a>
-        <a href="https://github.com/veenit-cell" class="social-link reveal" target="_blank" rel="noopener">
-          <span class="social-link-type">GitHub</span>
-          <span class="social-link-value">github.com/veenit-cell</span>
-        </a>
-      </div>
-    </div>
-    <div>
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required minlength="2" aria-required="true">
+  <main id="main">
+    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Engineering student · India</p>
+        <h1 id="hero-title">Curious by nature.<br><em>Building</em> by practice.</h1>
+        <p class="hero-intro">I’m Veenit, a third-year engineering student exploring artificial intelligence, machine learning, and software that can make a practical difference.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="mailto:veenitramteke@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required aria-required="true">
+        <div class="hero-meta" aria-label="Areas of interest">
+          <div><span class="meta-label">Currently learning</span><span>AI · Machine learning</span></div>
+          <div><span class="meta-label">Outside the syllabus</span><span>Hackathons · Prototyping</span></div>
         </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project…" required minlength="10" maxlength="4000" aria-required="true"></textarea>
+      </div>
+      <aside class="hero-art" aria-label="A visual note about learning and building">
+        <div class="art-topline"><span>FIELD NOTES / 01</span><span>2026</span></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-monogram">VR</div>
+        <div class="orbit-point point-one"></div><div class="orbit-point point-two"></div><div class="orbit-point point-three"></div>
+        <p class="art-caption">Learn fast.<br>Build with care.<br>Keep asking why.</p>
+        <span class="art-coordinate">21°08′ N &nbsp; 79°05′ E</span>
+      </aside>
+    </section>
+
+    <section class="intro-strip" aria-label="Introduction">
+      <p>Good work starts with a good question.</p><span aria-hidden="true">✳</span><p>Then a small thing you can test.</p><span aria-hidden="true">✳</span><p>Then the patience to make it better.</p>
+    </section>
+
+    <section class="content-section section-wrap" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 / A little about me</p>
+        <h2 id="about-title">Learning in public,<br><em>building with purpose.</em></h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-lede">I like the space between a new idea and a working prototype. I’m learning how AI, data, and thoughtful product design can come together to solve real problems.</p>
+        <div class="about-note">
+          <span class="note-mark" aria-hidden="true">↳</span>
+          <p>Every project is a chance to learn something deeply, work well with a team, and leave the idea a little clearer than I found it.</p>
         </div>
-        <button class="btn-submit" type="submit">Open Email Draft</button>
-        <p class="form-note">Your email app will open with a draft addressed to me. Nothing is sent automatically.</p>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
-</section>
+      </div>
+      <div class="focus-row" aria-label="Current focus areas">
+        <article class="focus-card"><span class="focus-number">01</span><h3>Artificial intelligence</h3><p>Exploring machine learning and responsible, human-centered uses of AI.</p></article>
+        <article class="focus-card"><span class="focus-number">02</span><h3>Full-stack building</h3><p>Connecting clear interfaces to useful data and application logic.</p></article>
+        <article class="focus-card"><span class="focus-number">03</span><h3>Learning by doing</h3><p>Hackathons and team projects turn questions into hands-on practice.</p></article>
+      </div>
+    </section>
 
-</main>
-<!-- ── FOOTER ── -->
-<footer>
-  <span class="footer-name">Veenit Ramteke</span>
-  <span class="footer-copy">© 2026 — All rights reserved</span>
-  <div class="footer-links">
-    <a href="https://instagram.com/veenitr" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.linkedin.com/in/veenit-ramteke/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/veenit-cell" target="_blank" rel="noopener">GitHub</a>
-    <a href="mailto:veenitramteke@gmail.com">Email</a>
-  </div>
-</footer>
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-wrap">
+        <div class="section-heading projects-heading">
+          <div><p class="eyebrow">02 / Selected work</p><h2 id="projects-title">Small teams.<br><em>Big questions.</em></h2></div>
+          <p class="section-aside">A few projects that have helped me learn by building alongside others.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-art art-disaster" aria-hidden="true"><span class="art-tag">FIELD SYSTEMS</span><div class="map-lines"></div><i class="map-node node-a"></i><i class="map-node node-b"></i><i class="map-node node-c"></i><span class="art-index">01</span><span class="map-label">REPORT → REVIEW → RESPONSE</span></div>
+            <div class="project-content"><p class="project-category">Disaster response · Tabletop demo</p><h3>DRISHTI</h3><p>A supervised disaster-response workspace that brings field reports, coverage gaps, routes, and resources into one review process. Mission decisions require human approval.</p><div class="project-bottom"><span>React · TypeScript · FastAPI</span><a href="https://github.com/veenit-cell/DRISHTI" target="_blank" rel="noopener noreferrer" aria-label="View DRISHTI on GitHub">View project ↗</a></div><p class="project-disclaimer">Prototype for a tabletop demo, not a live emergency service.</p></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-carbon" aria-hidden="true"><span class="art-tag">SUSTAINABLE HABITS</span><div class="carbon-loop"><span>DO</span><b>↻</b><span>REPEAT</span></div><div class="carbon-spark spark-a">✳</div><div class="carbon-spark spark-b">+</div><span class="art-index">02</span></div>
+            <div class="project-content"><p class="project-category">Sustainability · Hackathon MVP</p><h3>CarbonLoop</h3><p>A sustainability game that turns everyday activities into missions and rewards. Estimated avoided emissions stay separate from game points.</p><div class="project-bottom"><span>Next.js · React · TypeScript</span><a href="https://github.com/veenit-cell/CARBON-LOOP-FINAL" target="_blank" rel="noopener noreferrer" aria-label="View CarbonLoop on GitHub">View project ↗</a></div><p class="project-disclaimer">Hackathon demo with simulated evidence and rewards.</p></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-vash" aria-hidden="true"><span class="art-tag">PATTERN FINDING</span><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="chart-line"></div><span class="art-index">03</span><span class="chart-label">SIGNALS / ACTIVITY</span></div>
+            <div class="project-content"><p class="project-category">Transaction monitoring · Team project</p><h3>VASH</h3><p>A transaction-monitoring project exploring anomaly scoring, graph analysis, and a security dashboard for investigating suspicious payment patterns.</p><div class="project-bottom"><span>React · TypeScript · Python</span><a href="https://github.com/S-Abhiram05/Hack2ignite-VASH" target="_blank" rel="noopener noreferrer" aria-label="View VASH on GitHub">View project ↗</a></div><p class="project-disclaimer">My contribution: database and data structuring.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<script>
-/* ══════════════════════════════════
-   NAV / HAMBURGER
-══════════════════════════════════ */
-const hamburger = document.getElementById('hamburger');
-const drawer = document.getElementById('drawer');
-const drawerClose = document.getElementById('drawerClose');
-const mobileNavigation = window.matchMedia('(max-width: 1000px)');
+    <section class="highlights-section section-wrap" id="highlights" aria-labelledby="highlights-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / Moments that matter</p><h2 id="highlights-title">A little momentum<br><em>along the way.</em></h2></div><p class="section-aside">Teamwork, deadlines, and the thrill of figuring it out together.</p></div>
+      <div class="highlight-list">
+        <article class="highlight"><span class="highlight-year">2026</span><div><p class="highlight-kicker">First place · Robotics</p><h3>ELECTRONOVA Hackathon</h3><p>Our team, Hiveminds, placed first in robotics at a 24-hour national-level hackathon and received a ₹15,000 team prize.</p></div><span class="highlight-symbol" aria-hidden="true">↗</span></article>
+        <article class="highlight"><span class="highlight-year">2026</span><div><p class="highlight-kicker">Top 15 finalist</p><h3>AVINYA · IIT Guwahati</h3><p>Selected among the top 15 finalists at the AVINYA 2026 hackathon hosted by IIT Guwahati.</p></div><span class="highlight-symbol" aria-hidden="true">✳</span></article>
+      </div>
+    </section>
 
-if (typeof drawer.showModal === 'function') {
-  let focusAfterClose = null;
-  function closeNavigation(target = hamburger) {
-    focusAfterClose = target;
-    hamburger.setAttribute('aria-expanded', 'false');
-    drawer.close();
-  }
-  hamburger.addEventListener('click', () => {
-    if (!mobileNavigation.matches) return;
-    focusAfterClose = hamburger;
-    drawer.showModal();
-    hamburger.setAttribute('aria-expanded', 'true');
-    drawerClose.focus();
-  });
-  drawerClose.addEventListener('click', () => closeNavigation());
-  drawer.addEventListener('keydown', event => {
-    if (event.key !== 'Tab') return;
-    const controls = [...drawer.querySelectorAll('button, a[href]')];
-    const first = controls[0];
-    const last = controls[controls.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
-  });
-  drawer.addEventListener('cancel', event => {
-    event.preventDefault();
-    closeNavigation();
-  });
-  drawer.addEventListener('close', () => {
-    hamburger.setAttribute('aria-expanded', 'false');
-    (focusAfterClose || hamburger).focus({ preventScroll: true });
-    focusAfterClose = null;
-  });
-  drawer.querySelectorAll('.drawer-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const target = document.getElementById(link.hash.slice(1));
-      if (target) target.setAttribute('tabindex', '-1');
-      closeNavigation(target || hamburger);
-    });
-  });
-  mobileNavigation.addEventListener('change', event => {
-    if (!event.matches && drawer.open) closeNavigation(document.querySelector('.nav-logo'));
-  });
-  document.querySelector('nav').classList.add('menu-ready');
-}
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const scrollProgress = document.getElementById('scrollProgress');
-const navSectionLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
-if (!reducedMotion.matches) document.body.classList.add('motion-ready');
-
-/* Contact: build a draft locally; no message is sent by this page. */
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-if (contactForm) {
-  contactForm.addEventListener('submit', event => {
-    event.preventDefault();
-    if (!contactForm.reportValidity()) {
-      formStatus.textContent = 'Please complete the required fields before opening your email app.';
-      return;
-    }
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const subject = `Portfolio enquiry from ${name}`;
-    const body = `Name: ${name}\nReply email: ${email}\n\n${message}`;
-    formStatus.textContent = 'Opening your email app with a draft. Review it before sending.';
-    window.location.href = `mailto:veenitramteke@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  });
-}
-
-/* ══════════════════════════════════
-   SCROLL-LINKED MOTION
-══════════════════════════════════ */
-const heroCols = document.querySelectorAll('.hero-col');
-const heroEl   = document.getElementById('hero');
-const aboutHeadline   = document.getElementById('aboutHeadline');
-const contactHeadline = document.getElementById('contactHeadline');
-const motionSections = [...document.querySelectorAll('main section[id]')];
-let motionFrame = 0;
-
-function updateMotion() {
-  motionFrame = 0;
-  const scrollY = window.scrollY;
-  const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-  if (scrollProgress) scrollProgress.style.transform = `scaleX(${Math.min(scrollY / maxScroll, 1).toFixed(4)})`;
-  if (reducedMotion.matches) return;
-
-  heroCols.forEach(col => {
-    const speed = parseFloat(col.dataset.speed) || 0.3;
-    col.style.transform = `translateY(${-scrollY * speed}px)`;
-  });
-
-  const progress = Math.min(scrollY / 600, 1);
-  const eased = 1 - Math.pow(1 - progress, 2.2);
-  heroEl.style.setProperty('--hero-fade', eased.toFixed(4));
-  const vc = window.innerHeight / 2;
-  [aboutHeadline, contactHeadline].forEach(el => {
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const elCentre = rect.top + rect.height / 2;
-    const dist = elCentre - vc;
-    el.style.transform = `translateY(${(dist * 0.025).toFixed(2)}px)`;
-  });
-
-  let activeId = '';
-  motionSections.forEach(section => {
-    const rect = section.getBoundingClientRect();
-    if (rect.top <= 140 && rect.bottom > 140) activeId = section.id;
-  });
-  navSectionLinks.forEach(link => {
-    if (link.getAttribute('href') === `#${activeId}`) link.setAttribute('aria-current', 'page');
-    else link.removeAttribute('aria-current');
-  });
-}
-function scheduleMotion() {
-  if (!motionFrame) motionFrame = requestAnimationFrame(updateMotion);
-}
-window.addEventListener('scroll', scheduleMotion, { passive: true });
-window.addEventListener('resize', scheduleMotion, { passive: true });
-updateMotion();
-reducedMotion.addEventListener('change', () => {
-  if (reducedMotion.matches) {
-    document.body.classList.remove('motion-ready');
-    heroCols.forEach(col => col.style.transform = '');
-    [aboutHeadline, contactHeadline].forEach(el => { if (el) el.style.transform = ''; });
-  } else {
-    document.body.classList.add('motion-ready');
-  }
-  scheduleMotion();
-});
-
-/* ══════════════════════════════════
-   SCROLL REVEAL — IntersectionObserver
-══════════════════════════════════ */
-const revealEls = document.querySelectorAll('.reveal');
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  try {
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('reveal-pending');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0 });
-    revealEls.forEach(el => {
-      revealObserver.observe(el);
-      // Never hide content already in view or containing keyboard focus.
-      if (el.getBoundingClientRect().top > window.innerHeight && !el.contains(document.activeElement)) {
-        el.classList.add('reveal-pending');
-      }
-      el.addEventListener('focusin', () => el.classList.remove('reveal-pending'));
-    });
-    reducedMotion.addEventListener('change', () => {
-      if (reducedMotion.matches) {
-        revealObserver.disconnect();
-        revealEls.forEach(el => el.classList.remove('reveal-pending'));
-      }
-    });
-  } catch (_) {
-    revealEls.forEach(el => el.classList.remove('reveal-pending'));
-  }
-}
-</script>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-wrap contact-inner">
+        <div><p class="eyebrow">04 / The next good question</p><h2 id="contact-title">Have an idea?<br><em>Let’s talk.</em></h2><p class="contact-copy">I’m always glad to meet people who enjoy learning, building, and making useful things together.</p></div>
+        <div class="contact-links"><a class="contact-email" href="mailto:veenitramteke@gmail.com">veenitramteke@gmail.com <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/veenit-ramteke/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/veenit-cell" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="footer-mark" href="#top">VR</a><p>Designed and built with curiosity.</p><p>© 2026 Veenit Ramteke</p></footer>
 </body>
 </html>
+
